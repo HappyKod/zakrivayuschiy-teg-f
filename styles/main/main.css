@@ -1,0 +1,76 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.card {
+  background-color: var(--section-bg-color, #ffffff);
+  border: 2px var(--border-color, #000000) solid;
+  font-size: 18px;
+  font-family: var(--main-font-family), 'sans-serif';
+}
+
+.card__tittle {
+  font-size: inherit;
+  font-family: inherit;
+  margin: 4px 10px;
+}
+
+.card__img-container {
+  position: relative;
+  border-top: 2px var(--border-color, #000000) solid;
+  border-bottom: 2px var(--border-color, #000000) solid;
+  mix-blend-mode: hard-light;
+}
+
+.card__img-picture {
+  display: block;
+  width: 100%;
+  min-height: 696px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card__img-text {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+
+  opacity: 0.5;
+
+
+  color: var(--text-color, #000);
+  font-family: var(--accent-font-family), 'monospace';
+  -webkit-text-stroke: 1px #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.card__description {
+  display: flex;
+  gap: 27px;
+  flex-direction: column;
+
+  margin: 25px;
+  line-height: 21px;
+}
+
+
+.card__button-container {
+  margin: 25px;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.card__like-button {
+  padding: 11px 35px;
+  font-size: 14px;
+  font-family: var(--accent-font-family), 'monospace';
+  line-height: 90%;
+}

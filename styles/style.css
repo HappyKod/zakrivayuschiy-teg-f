@@ -17,4 +17,20 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  max-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  /*max-inline-size: min(100%, 700px);*/
+  margin: 0 auto;
+
+  /*min-height: 3000px;*/
+  padding-top: 100px;
+  font-size: 18px;
+  border-image-repeat: repeat;
+  background-image: repeating-linear-gradient(to left, var(--page-bg-line-color, #d3d3d3) 2px, transparent 4px),
+  repeating-linear-gradient(to bottom, var(--page-bg-line-color, #d3d3d3) 2px, transparent 4px),
+  linear-gradient(to bottom,
+          var(--page-bg-gradient-start-color, #e7e7e7) 0%,
+          var(--page-bg-gradient-start-color, #e7e7e7) 0.01%,
+          var(--page-bg-gradient-end-color, #1a1a1a) 100%);
+
+  color: var(--main-color, #000000);
 }

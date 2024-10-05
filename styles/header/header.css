@@ -1,0 +1,108 @@
+.header {
+
+
+  background-color: var(--section-bg-color, #ffffff);
+  border: 2px var(--border-color, #000000) solid;
+
+  font-family: var(--accent-font-family), 'monospace';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+
+  text-align: center;
+  padding-top: 19.5%;
+  padding-bottom: 24px;
+  margin-bottom: 100px;
+}
+
+.header__title {
+  font-weight: inherit;
+  font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
+  margin-bottom: 20px;
+}
+
+.header__text {
+  font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
+  margin-bottom: 20px;
+}
+
+.header__theme-menu {
+  padding-inline-start: 19px;
+  display: flex;
+  justify-content: center;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  text-align: start;
+}
+
+.theme-menu__button {
+  position: relative;
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  animation: horizontal_movement 0.5s ease-in-out infinite alternate;
+}
+
+/*state*/
+
+.theme-menu__button:hover,
+.theme-menu__button:disabled,
+.theme-menu__button:focus {
+  transition: filter 0.3s ease;
+  filter: opacity(0.6)
+}
+
+.theme-menu__button:disabled {
+  pointer-events: none;
+}
+
+.theme-menu__button::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 0;
+  background-color: currentColor;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.theme-menu__button:focus {
+  outline: none;
+}
+
+
+/*animation*/
+
+@keyframes horizontal_movement {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: -16px;
+  }
+}
