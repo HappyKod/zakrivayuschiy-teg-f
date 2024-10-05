@@ -10,6 +10,8 @@
   --border-color: var(--main-color);
   --text-color: var(--main-color);
 
+  --special-button-color: #fff;
+
   --main-font-family: Inter;
   --accent-font-family: PressStart2P;
 }

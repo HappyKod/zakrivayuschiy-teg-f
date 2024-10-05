@@ -3,7 +3,6 @@
   overflow: hidden;
   background-color: var(--section-bg-color, #ffffff);
   border: 2px var(--border-color, #000000) solid;
-  /*mix-blend-mode: difference;*/
 }
 
 .button__icon {
@@ -33,9 +32,10 @@
 
 
 .button::after {
+  mix-blend-mode: difference;
   content: "";
   position: absolute;
-  background: var(--border-color, #000000);
+  background-color: var(--special-button-color, #fff);
   width: 110%;
   height: 110%;
   left: 0;
@@ -51,5 +51,6 @@
 }
 
 .button__text {
-  /*mix-blend-mode: difference;*/
+  color: var(--special-button-color, #fff);
+  mix-blend-mode: difference;
 }
