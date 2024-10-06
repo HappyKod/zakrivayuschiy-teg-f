@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 49px;
 }
 
 .card {
@@ -21,13 +21,12 @@
   position: relative;
   border-top: 2px var(--border-color, #000000) solid;
   border-bottom: 2px var(--border-color, #000000) solid;
-  mix-blend-mode: hard-light;
 }
 
 .card__img-picture {
   display: block;
   width: 100%;
-  min-height: 696px;
+  min-height: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
   object-fit: cover;
   object-position: center;
 }
@@ -36,19 +35,33 @@
   position: absolute;
   top: 25px;
   right: 25px;
-
+  mix-blend-mode: hard-light;
   opacity: 0.5;
 
 
   color: var(--text-color, #000);
   font-family: var(--accent-font-family), 'monospace';
-  -webkit-text-stroke: 1px #fff;
+  text-shadow: -1px 0 var(--section-bg-color, #ffffff),
+  0 1px var(--section-bg-color, #ffffff),
+  1px 0 var(--section-bg-color, #ffffff),
+  0 -1px var(--section-bg-color, #ffffff);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@supports ((text-stroke: 1px var(--section-bg-color, #ffffff)) or (-webkit-text-stroke: 1px var(--section-bg-color, #ffffff))) {
+  .card__img-text {
+    -webkit-text-stroke: 1px var(--section-bg-color, #ffffff);
+    text-shadow: none;
+  }
+}
+
+.card__img-upper {
   text-transform: uppercase;
 }
+
 
 .card__description {
   display: flex;

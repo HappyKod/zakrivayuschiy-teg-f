@@ -1,7 +1,9 @@
 .footer {
   margin-top: 50px;
   width: 100%;
+  margin-bottom: 102px;
 }
+
 .footer__button {
   margin: 0 auto;
   background-color: var(--section-bg-color, #ffffff);
@@ -18,5 +20,9 @@
 @media (width <= 375px) {
   .footer__button {
     flex-direction: column;
+  }
+
+  .footer__button-icon {
+    width: 28px;
   }
 }

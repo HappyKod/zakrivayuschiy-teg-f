@@ -11,7 +11,8 @@
   text-transform: uppercase;
 
   text-align: center;
-  padding-top: 19.5%; /*136px*/
+  /*padding-top: 19.5%; !*136px*!*/
+  padding-top: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
   padding-bottom: 22px;
   margin-bottom: 100px;
 }
@@ -107,7 +108,7 @@
   }
 }
 
-@media (width <= 375px) {
+@media (width < 375px) {
   .header__title {
     font-size: 44px;
   }

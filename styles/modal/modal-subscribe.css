@@ -1,7 +1,8 @@
 .modal-subscribe {
+  margin: auto auto;
   background-color: var(--section-bg-color, #ffffff);
   border: 2px var(--border-color, #000000) solid;
-  max-width: min(91%, 363px);
+  max-width: min(91%, 360px);
   padding: 31px 32px;
 }
 
@@ -13,7 +14,7 @@
 
 .modal-subscribe__icon {
   color: var(--main-color, #000);
-  width: 32px;
+  width: 39px;
 }
 
 .modal-subscribe__text {
@@ -28,7 +29,7 @@
 }
 
 .modal-subscribe__button {
-  margin-top: 20px;
+  margin-top: 30px;
   width: calc(100% - 2 * 2px);
 }
 
