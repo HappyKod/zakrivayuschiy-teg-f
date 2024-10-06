@@ -18,9 +18,11 @@
 }
 
 .header__title {
+  display: block;
   font-weight: inherit;
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 .header__text {
@@ -42,6 +44,7 @@
 }
 
 .theme-menu__button {
+  cursor: pointer;
   position: relative;
   background: transparent;
   border: 0;

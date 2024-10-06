@@ -18,10 +18,8 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   max-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
-  /*max-inline-size: min(100%, 700px);*/
   margin: 0 auto;
 
-  /*min-height: 3000px;*/
   padding-top: 100px;
   font-size: 18px;
   border-image-repeat: repeat;

@@ -5,11 +5,50 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --page-bg-line-color: #d3d3d3;
+    --page-bg-gradient-start-color: #e7e7e7;
+    --page-bg-gradient-end-color: #1a1a1a;
+    --section-bg-color: #fff;
+    --main-color: #000;
+    --main-text-font-wght: 400;
+    --main-label-font-wght: 700;
+    --special-button-color: #fff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-bg-line-color: #000;
+    --page-bg-gradient-start-color: #007f0c;
+    --page-bg-gradient-end-color: #004306;
+    --section-bg-color: #000;
+    --main-color: #00CC14;
+    --main-text-font-wght: 465;
+    --main-label-font-wght: 785;
+    --special-button-color: #00CC14;
+  }
+}
+
 .theme-dark {
   --page-bg-line-color: #000;
   --page-bg-gradient-start-color: #007f0c;
   --page-bg-gradient-end-color: #004306;
   --section-bg-color: #000;
   --main-color: #00CC14;
+  --main-text-font-wght: 465;
+  --main-label-font-wght: 785;
   --special-button-color: #00CC14;
+}
+
+.theme-light {
+  --page-bg-line-color: #d3d3d3;
+  --page-bg-gradient-start-color: #e7e7e7;
+  --page-bg-gradient-end-color: #1a1a1a;
+  --section-bg-color: #fff;
+  --main-color: #000;
+  --main-text-font-wght: 400;
+  --main-label-font-wght: 700;
+  --special-button-color: #fff;
 }

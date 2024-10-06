@@ -1,4 +1,5 @@
 .button {
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   background-color: var(--section-bg-color, #ffffff);
@@ -6,6 +7,7 @@
 }
 
 .button__icon {
+  cursor: pointer;
   background: transparent;
   border: 0;
 }
