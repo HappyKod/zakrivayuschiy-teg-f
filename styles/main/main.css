@@ -27,7 +27,7 @@
 .card__img-picture {
   display: block;
   width: 100%;
-  min-height: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
+  height: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
   object-fit: cover;
   object-position: center;
 }
@@ -196,4 +196,37 @@
   100% {
     opacity: 1;
   }
+}
+
+/*filters*/
+.filter-brightness {
+  filter: brightness(65%);
+}
+
+.filter-contrast {
+  filter: contrast(150%);
+}
+
+.filter-grayscale {
+  filter: grayscale(0.3);
+}
+
+.filter-saturate {
+  filter: saturate(0.2);
+}
+
+.filter-sepia {
+  filter: sepia(60%);
+}
+
+.filter-hue-rotate {
+  filter: hue-rotate(10grad);
+}
+
+.filter-many {
+  filter: brightness(80%) saturate(60%);
+}
+
+.filter-invert {
+  filter: invert(0.3);
 }
