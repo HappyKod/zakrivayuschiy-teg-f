@@ -98,7 +98,9 @@
   transition: fill 0.3s linear;
 }
 
+/*heart*/
 
+/*hover*/
 .card__icon-button:hover {
   --heart-core-color: var(--main-color);
   --heart-main-body-color: var(--main-color);
@@ -109,5 +111,19 @@
 }
 
 .card__icon-button:hover #main-body {
+  transition: fill 0.3s 0.05s linear;
+}
+
+/*active*/
+.card__icon-button:active {
+  --heart-core-color: red;
+  --heart-main-body-color: red;
+}
+
+.card__icon-button:active #core {
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:active #main-body {
   transition: fill 0.3s 0.05s linear;
 }
