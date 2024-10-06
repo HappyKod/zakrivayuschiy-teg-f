@@ -106,3 +106,9 @@
     left: -16px;
   }
 }
+
+@media (width <= 375px) {
+  .header__title {
+    font-size: 44px;
+  }
+}

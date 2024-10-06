@@ -34,3 +34,9 @@
 
   color: var(--main-color, #000000);
 }
+
+@media (width <= 375px) {
+  .page {
+    max-inline-size: 100%;
+  }
+}

@@ -64,8 +64,19 @@
   margin: 25px;
   display: flex;
   justify-content: right;
-  align-items: flex-end;
-  gap: 6px;
+  align-items: center;
+  gap: 4px;
+}
+
+.card__icon-button {
+  padding:  0;
+  max-width: 44px;
+  max-height: 40px;
+  border: 2px transparent solid;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px var(--border-color, #000000) solid;
 }
 
 .card__like-button {
@@ -73,4 +84,9 @@
   font-size: 14px;
   font-family: var(--accent-font-family), 'monospace';
   line-height: 90%;
+}
+
+
+#sparks {
+  opacity: 0;
 }
