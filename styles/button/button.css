@@ -18,6 +18,8 @@
   font-size: 14px;
   font-family: var(--accent-font-family), 'monospace';
   line-height: 90%;
+  color: var(--special-button-color, #fff);
+  mix-blend-mode: difference;
 }
 
 .button:focus {
@@ -48,9 +50,4 @@
 
 .button:hover::after {
   transform: translateY(-50%) scaleX(1);
-}
-
-.button__text {
-  color: var(--special-button-color, #fff);
-  mix-blend-mode: difference;
 }
