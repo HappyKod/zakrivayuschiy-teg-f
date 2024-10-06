@@ -1,0 +1,38 @@
+.modal-subscribe {
+  background-color: var(--section-bg-color, #ffffff);
+  border: 2px var(--border-color, #000000) solid;
+  max-width: min(91%, 363px);
+  padding: 31px 32px;
+}
+
+.modal-subscribe[open] .modal-subscribe__header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal-subscribe__icon {
+  color: var(--main-color, #000);
+  width: 32px;
+}
+
+.modal-subscribe__text {
+  max-width: clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);
+  color: var(--text-color, #000);
+  text-transform: uppercase;
+  font-family: var(--accent-font-family), 'monospace';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.modal-subscribe__button {
+  margin-top: 20px;
+  width: calc(100% - 2 * 2px);
+}
+
+.modal-subscribe::backdrop {
+  opacity: 0.75;
+  background: #000;
+}

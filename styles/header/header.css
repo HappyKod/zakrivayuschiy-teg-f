@@ -11,8 +11,8 @@
   text-transform: uppercase;
 
   text-align: center;
-  padding-top: 19.5%;
-  padding-bottom: 24px;
+  padding-top: 19.5%; /*136px*/
+  padding-bottom: 22px;
   margin-bottom: 100px;
 }
 
@@ -36,7 +36,7 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 11px;
+  gap: 9px;
   text-align: start;
 }
 
