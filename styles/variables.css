@@ -15,6 +15,7 @@
   --main-font-family: Inter;
   --accent-font-family: PressStart2P;
 
+  --heart-contour-color: var(--main-color);;
   --heart-core-color: transparent;
   --heart-main-body-color: transparent;
 }
