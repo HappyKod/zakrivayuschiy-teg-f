@@ -140,8 +140,8 @@
 
 /*active*/
 .card__icon-button:active {
-  --heart-core-color: red;
-  --heart-main-body-color: red;
+  --heart-core-color: var(--heart-active-color, red);
+  --heart-main-body-color: var(--heart-active-color, red);
 }
 
 .card__icon-button:active .core {
@@ -155,9 +155,9 @@
 /*click*/
 
 .card__icon-button .is-liked {
-  --heart-core-color: red;
-  --heart-main-body-color: red;
-  --heart-contour-color: red;
+  --heart-core-color: var(--heart-active-color, red);
+  --heart-main-body-color: var(--heart-active-color, red);
+  --heart-contour-color: var(--heart-active-color, red);
 }
 
 .card__icon-button .is-liked .core {

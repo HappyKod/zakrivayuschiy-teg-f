@@ -17,6 +17,7 @@
   --main-text-font-wght: 400;
   --main-label-font-wght: 700;
 
+  --heart-active-color: red;
   --heart-contour-color: var(--main-color);
   --heart-core-color: transparent;
   --heart-main-body-color: transparent;
