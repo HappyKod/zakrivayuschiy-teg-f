@@ -102,23 +102,23 @@
 
 /*heart*/
 
-#heart {
+.heart {
   transform-origin: center;
 }
 
-#sparks {
+.sparks {
   opacity: 0;
 }
 
-.card__icon-button #core {
+.card__icon-button .core {
   transition: fill 0.3s 0.3s linear;
 }
 
-.card__icon-button #main-body {
+.card__icon-button .main-body {
   transition: fill 0.3s linear;
 }
 
-.card__icon-button #contour {
+.card__icon-button .contour {
   transition: fill 0.1s linear;
 }
 
@@ -128,11 +128,11 @@
   --heart-main-body-color: var(--main-color);
 }
 
-.card__icon-button:hover #core {
+.card__icon-button:hover .core {
   transition: fill 0.3s linear;
 }
 
-.card__icon-button:hover #main-body {
+.card__icon-button:hover .main-body {
   transition: fill 0.3s 0.05s linear;
 }
 
@@ -142,11 +142,11 @@
   --heart-main-body-color: red;
 }
 
-.card__icon-button:active #core {
+.card__icon-button:active .core {
   transition: fill 0.3s linear;
 }
 
-.card__icon-button:active #main-body {
+.card__icon-button:active .main-body {
   transition: fill 0.3s 0.05s linear;
 }
 
@@ -158,23 +158,23 @@
   --heart-contour-color: red;
 }
 
-.card__icon-button .is-liked #core {
+.card__icon-button .is-liked .core {
   transition: fill 0.3s linear;
 }
 
-.card__icon-button .is-liked #main-body {
+.card__icon-button .is-liked .main-body {
   transition: fill 0.3s 0.05s linear;
 }
 
-.card__icon-button .is-liked #contour {
+.card__icon-button .is-liked .contour {
   transition: fill 0.3s 0.06s linear;
 }
 
-.card__icon-button .is-liked #heart {
+.card__icon-button .is-liked .heart {
   animation: zoom1-5 0.3s 0.1s ease-in alternate;
 }
 
-.card__icon-button .is-liked #sparks {
+.card__icon-button .is-liked .sparks {
   animation: sparks-opacity 0.3s 0.3s ease-in alternate;
 }
 
