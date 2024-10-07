@@ -3,13 +3,16 @@
   background-color: var(--section-bg-color, #ffffff);
   border: 2px var(--border-color, #000000) solid;
   max-width: min(91%, 360px);
-  padding: 31px 32px;
+  padding: 30px;
+}
+
+.modal-subscribe__header {
+  align-items: center;
+  gap: 20px;
 }
 
 .modal-subscribe[open] .modal-subscribe__header {
   display: flex;
-  align-items: center;
-  gap: 20px;
 }
 
 .modal-subscribe__icon {
@@ -29,11 +32,19 @@
 }
 
 .modal-subscribe__button {
+  padding: 9px 0 4px 0;
+  text-transform: uppercase;
   margin-top: 30px;
-  width: calc(100% - 2 * 2px);
+  width: 100%;
 }
 
 .modal-subscribe::backdrop {
   opacity: 0.75;
   background: #000;
+}
+
+@media (width <= 375px) {
+  .modal-subscribe {
+    padding: 30px 42px;
+  }
 }

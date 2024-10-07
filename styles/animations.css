@@ -12,3 +12,99 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+/*heart*/
+
+.heart {
+  transform-origin: center;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.card__icon-button .core {
+  transition: fill 0.3s 0.03s linear;
+}
+
+.card__icon-button .main-body {
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button .contour {
+  transition: fill 0.1s linear;
+}
+
+/*hover*/
+.card__icon-button:hover {
+  --heart-core-color: var(--main-color);
+  --heart-main-body-color: var(--main-color);
+}
+
+.card__icon-button:hover .core {
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .main-body {
+  transition: fill 0.3s 0.05s linear;
+}
+
+/*active*/
+.card__icon-button:active {
+  --heart-core-color: var(--heart-active-color, red);
+  --heart-main-body-color: var(--heart-active-color, red);
+}
+
+.card__icon-button:active .core {
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:active .main-body {
+  transition: fill 0.3s 0.05s linear;
+}
+
+/*click*/
+
+.card__icon-button .is-liked {
+  --heart-core-color: var(--heart-active-color, red);
+  --heart-main-body-color: var(--heart-active-color, red);
+  --heart-contour-color: var(--heart-active-color, red);
+}
+
+.card__icon-button .is-liked .core {
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button .is-liked .main-body {
+  transition: fill 0.3s 0.05s linear;
+}
+
+.card__icon-button .is-liked .contour {
+  transition: fill 0.3s 0.06s linear;
+}
+
+.card__icon-button .is-liked .heart {
+  animation: increase 0.3s 0.1s ease-in 1 alternate;
+}
+
+.card__icon-button .is-liked .sparks {
+  animation: appearance 0.3s 0.3s ease-in 1 alternate;
+}
+
+@keyframes increase {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
