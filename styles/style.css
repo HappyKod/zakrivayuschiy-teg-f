@@ -23,8 +23,13 @@
   padding-top: 100px;
   font-size: 18px;
   background-attachment: fixed;
-  background-image: repeating-linear-gradient(to left, var(--page-bg-line-color, #d3d3d3) 2px, transparent 4px),
-  repeating-linear-gradient(to bottom, var(--page-bg-line-color, #d3d3d3) 2px, transparent 4px),
+  background-image: repeating-linear-gradient(
+          to left,
+          var(--page-bg-line-color, #d3d3d3) 0px 2px,
+          transparent 2px 4px),
+  repeating-linear-gradient(to bottom,
+          var(--page-bg-line-color, #d3d3d3) 0px 2px,
+          transparent 2px 4px),
   linear-gradient(to bottom,
           var(--page-bg-gradient-start-color, #e7e7e7) 0%,
           var(--page-bg-gradient-start-color, #e7e7e7) 0.01%,
