@@ -1,28 +1,25 @@
-.footer {
-  margin-top: 50px;
-  width: 100%;
+.save-action {
   margin-bottom: 102px;
 }
 
-.footer__button {
+.save-action__button {
   margin: 0 auto;
-  background-color: var(--section-bg-color, #ffffff);
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 15px 21px;
 }
 
-.footer__button-icon {
+.save-action-icon {
   width: 21px;
 }
 
 @media (width <= 375px) {
-  .footer__button {
+  .save-action__button {
     flex-direction: column;
   }
 
-  .footer__button-icon {
+  .save-action-icon {
     width: 28px;
   }
 }
